@@ -1,0 +1,44 @@
+.card-container:hover .card-image img {
+  height: 120px;
+  transition: all 0.7s ease;
+  object-fit: cover;
+}
+
+.card-container .card-image img {
+  height: 240px;
+  object-fit: cover;
+  transition: all 0.7s ease;
+  width: 350px;
+}
+
+.card-container {
+  transition: 0.7s;
+  transform: translateY(0px);
+}
+
+.card-container .heading-container {
+  position: relative;
+  height: 100%;
+  margin: 8px;
+}
+
+.card-container .heading-container::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  bottom: 0;
+  background: #2e7d32;
+}
+
+.card-container .heading-container .slide {
+  position: relative;
+  padding: 8px;
+  display: none;
+}
+
+.card-container:hover .slide {
+  max-height: 100%;
+  transition: 0.7s;
+  display: block;
+}
